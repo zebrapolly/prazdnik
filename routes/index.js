@@ -8,7 +8,7 @@ module.exports = function(app, transporter) {
         console.log(req.body);
         transporter.sendMail({
             from: 'zebrapolly@gmail.com',
-            to: 'zebrapolly@gmail.com',
+            to: req.body.mailarr,
             subject: 'hello',
             html: req.body.name + ' ' + req.body.email + ' ' + req.body.phone + ' ' + req.body.description,
             text: 'hello world!'
