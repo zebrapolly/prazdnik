@@ -20,8 +20,8 @@ app.use('/sendmail', bodyParser.urlencoded({
 var transporter = nodemailer.createTransport(smtpTransport({
     service: 'Gmail',
     auth: {
-        user: 'zebrapolly@gmail.com',
-        pass: '19smirnov88'
+        user: '',
+        pass: ''
     }
 }));
 
